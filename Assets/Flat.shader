@@ -48,7 +48,7 @@
 			float3 lightDirection = normalize( _WorldSpaceLightPos0.xyz);
 
 														//diffuseReflection = _LightColor0 * dot(normalDirection, lightDirection)
-			float3 diffuseReflection = -_Color *_LightColor0.xyz * dot(normalDirection, lightDirection.xyz);
+			float3 diffuseReflection = _Color *_LightColor0.xyz * dot(normalDirection, lightDirection.xyz);
 
 										//take ther dot [product of the light direction and pixel-normal]
 
